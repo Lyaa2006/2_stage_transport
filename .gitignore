@@ -1,0 +1,43 @@
+# 忽略构建产物与中间文件
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/cmake_install.cmake
+/Makefile
+/Makefile2
+/TargetDirectories.txt
+/progress.marks
+*.o
+*.obj
+*.so
+*.a
+*.dll
+*.exe
+tscflp_ga
+
+# 忽略 Python 虚拟环境与字节码
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+pip-wheel-metadata/
+*.egg-info/
+*.egg
+
+# 忽略日志文件（如果需要保留部分日志，可手动移除对应条目）
+*.log
+run*.log
+
+# 忽略编辑器与系统文件
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# 可选：若数据文件很大且不希望提交，请取消注释下一行（默认保持数据目录受控）
+/data/
