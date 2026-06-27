@@ -1,5 +1,7 @@
 # TSCFLP GA with Elitism
 
+（基于论文A simple and effective genetic algorithm for the two-stage capacitated facility location problem的复现）
+
 该工程基于论文描述实现了带精英策略的遗传算法，用于求解两阶段容量限制设施选址问题（TSCFLP）。
 
 ## 依赖
@@ -29,7 +31,10 @@ cmake --build build
 ## 输出说明
 程序会输出每 10 代的最优适应度，并在结束时输出固定成本、运输成本与总耗时。
 
-## MAAT Python 脚本（客户聚合 + 精确求解）
+# MAAT Python 脚本（客户聚合 + 精确求解）
+
+（基于论文Formulation and solution of a two-stage capacitated facility location problem with multilevel capacities的复现）
+
 新增脚本 `tools/maat_solver.py`，按照 MAAT（Matheuristic based on Aggregation Approach and Exact method）流程
 执行客户聚合、聚合模型求解、变量固定与原问题精确求解。
 
